@@ -14,35 +14,81 @@
         </a>
             <a href="#navihome"><img src="media/Hamburger-Menu.png" alt="Hamburger-Menu" height="60" width="60" class="menu"></a>
     </div>
+    <hr>
     <div id="IntroText">
         <h1>Hi, I’m Ashley.</h1>
-        <h2>A UX designer here to add a creative touch to any project. Based in Philly, I’m ready to join a team and create wonderful products together. Come check out what I’ve made!</h2>
+        <h2 class="heading">A UX designer here to add a creative touch to any project. Based in Philly, I’m ready to join a team and create wonderful products together. Come check out what I’ve made!</h2>
     </div>
 
 <div id="Thumbnails">
     <h2 class="titles">Design Work</h2>
     <h3 class="subtitle">Here are some examples of my design work.</h3>
             <h4>eBay Redesign - Fixing Layout Issues</h4>
-                <img src="Media/eBay_thumbnail.png" alt="Thumbnail showing off computer with redesigned ebay website" height="256" width="339" class="responsive">
-                <h5><a href="case_study_01.html">View work here</a></h5>
+                <picture> 
+                    <source
+                        media="(min-width: 1000px)"
+                        srcset="Media/eBay_thumbnail_large.png"/>
 
+                    <source
+                        media="(min-width: 600px)"
+                        srcset="Media/eBay_thumbnail_medium.png"/>
+
+                    <img src="Media/eBay_thumbnail_small.png" alt="Thumbnail showing off computer with redesigned ebay website.">
+                </picture>
+                <a href="case_study_01.html"> 
+                    <h5 class="HomeToStudies">View Case Study Here</h5>
+                </a>
             <h4>Eco Points – A Product that Encourages Recycling</h4>
-                <img src="Media/EcoPoints_thumbnail.png" alt="Thumbnail showing off screens for the Eco Points app" height="256" width="339" class="responsive">
-                <h5><a href="case_study_02.html">View work here</a></h5>
+                <picture> 
+                    <source
+                        media="(min-width: 1000px)"
+                        srcset="Media/EcoPoints_thumbnail_large.png"/>
 
+                    <source
+                        media="(min-width: 600px)"
+                        srcset="Media/EcoPoints_thumbnail_medium.png"/>
+
+                    <img src="Media/EcoPoints_thumbnail_small.png" alt="Thumbnail showing off screens for the Eco Points app.">
+                </picture>
+                <a href="case_study_02.html"> 
+                    <h5 class="HomeToStudies">View Case Study Here</h5>
+                </a>
             <h4>Squabble - Voice Chat made Simple and Fun</h4>
-                <img src="Media/Squabble_Thumbnail.png" alt="Thumbnail showing off screens for the Squabble app" height="256" width="339" class="responsive">
-                <h5><a href="case_study_03.html">View work here</a></h5>
+                <picture> 
+                    <source
+                        media="(min-width: 1000px)"
+                        srcset="Media/Squabble_Thumbnail_large.png"/>
+
+                    <source
+                        media="(min-width: 600px)"
+                        srcset="Media/Squabble_Thumbnail_medium.png"/>
+
+                    <img src="Media/Squabble_Thumbnail_small.png" alt="Thumbnail showing off screens for the Squabble app.">
+                </picture>
+                <a href="case_study_03.html"> 
+                    <h5 class="HomeToStudies">View Case Study Here</h5>
+                </a>
 </div>
 <div>
     <h2 class="titles">Other Works</h2>
         <h3 class="subtitle">Here are some other works I have made outside of design.</h3>
-            <article>
-                <img src="Media/Other_Works_Thumbnail.png" alt="Thumbnail Showing off examples of other works made by Ashley Nguyen" height="256" width="339" class="responsive">
-                <h5><a href="Other_Works.html"> View work here</a></h5>
+            <picture> 
+                <source
+                    media="(min-width: 1000px)"
+                    srcset="Media/Other_Works_Thumbnail_large.png"/>
+
+                <source
+                    media="(min-width: 600px)"
+                    srcset="Media/Other_Works_Thumbnail_medium.png"/>
+
+                <img src="Media/Other_Works_Thumbnail_small.png" alt="Thumbnail Showing off examples of other works made by Ashley Nguyen.">
+            </picture>
+            <a href="Other_Works.html"> 
+                <h5 class="HomeToStudies">View Other Works Here</h5>
+            </a>
 </div>
-    <div id="NaviMenu">
-        <h2 class="navi">Navigation</h2>
+<div id="NaviMenu">
+        <h3 class="navi">Navigation</h3>
             <a href="Index.html">Home</a>
                 <br>
             <a href="case_study_01.html">Portfolio</a>
@@ -50,7 +96,7 @@
             <a href="Resume.html">Resume</a>
                 <br>
             <a href="About_Me_Contact.html">About Me</a>
-    </div>
+</div>
     
 </body>
 </html>
