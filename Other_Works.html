@@ -7,52 +7,111 @@
     <title>Ashley Nguyen's Works</title>
 </head>
 <body>
-    <header>
+    <div id="head">
         <a href="Index.html">
-            <img src="media/Logo-for-Website-01.png" alt="Website Logo" height="54" width="54" class="logo">
+                <img src="Media/website_logo.png" alt="Website Logo" height="60" width="60" class="logo">
                 <p class="heading logo">Ashley Nguyen's Works</p>
         </a>
-            <a href="#naviotherworks"><img src="media/Hamburger-Menu.png" alt="Hamburger-Menu" height="60" width="60" class="menu"></a>
-    </header>
-<h1 class="casestudy">
-    Other Works
-</h1>
-    <img src="media/Photography-Sample-01.jpg" alt="An photo of a birght pink sunrise on a street" height="493" width="370" class="responsive">
-        <p class="other">Photography Sample: Photo of a bright pink sunrise on a street</p>
-    <img src="media/Photography-Sample-02.jpg" alt="A black and white photo of a man covering his face with card to block out the light" height="555" width="370" class="responsive">
-        <p class="other">Photography Sample: Black and white photo of a man covering his face with a card</p>
-    <img src="media/Lettering-Pattern-Art.jpg" alt="Image of a wave-like shape with a swirly sky pattern" height="298" width="370" class="responsive">
-        <p class="other">Graphic Design Sample: Art inspired by patterns and name initials done with Illustrator</p>
-    <img src="media/Low-Poly-Self-Portrait.jpg" alt="Potrait of woman made of geometric shapes" height="463" width="370" class="responsive">
-        <p class="other">Graphic Design Sample: Lowpoly self potrait done using Photoshop</p>
-    <img src="media/Simple-Ball-Animation.gif" alt="A ball bouncing around and through boxes" height="17.71" width="370" class="responsive">
-        <p class="other">Animation Sample: A ball bouncing around and through boxes</p>
-<div class="box"></div>
-<div>
-    <button>
-        <a href="case_study_03.html">Case Study #3</a>
-    </button>
-    <button>
-        <a href="case_study_01.html">Case Study #1</a>
-    </button>
+            <a href="#navihome"><img src="media/Hamburger-Menu.png" alt="Hamburger-Menu" height="60" width="60" class="menu"></a>
+    </div>
+    <hr>
+
+    <div>
+        <h1 class="casestudy">
+            Other Works
+        </h1>
+    </div>
+
+    <div>
+        <div>
+            <picture> 
+                <source
+                    media="(min-width: 1000px)"
+                    srcset="Media/other_works_images/Photography_Sample_01_large.jpg"/>
+
+                <source
+                    media="(min-width: 600px)"
+                    srcset="Media/other_works_images/Photography_Sample_01_medium.jpg"/>
+
+                <img src="Media/other_works_images/Photography_Sample_01_small.jpg" alt="A photo of a bright pink sunrise on a street.">
+            </picture>
+            <p class="other">Photography Sample: Photo of a bright pink sunrise on a street</p>
+        </div>
+
+        <div>
+            <picture> 
+                <source
+                    media="(min-width: 1000px)"
+                    srcset="Media/other_works_images/Photography_Sample_02_large.jpg"/>
+        
+                <source
+                    media="(min-width: 600px)"
+                    srcset="Media/other_works_images/Photography_Sample_02_medium.jpg"/>
+        
+                <img src="Media/other_works_images/Photography_Sample_02_small.jpg" alt="A black and white photo of a man covering his face with card to block out the light.">
+            </picture> 
+            <p class="other">Photography Sample: Black and white photo of a man covering his face with a card</p>
+        </div>
+
+        <div>
+            <picture> 
+                <source
+                    media="(min-width: 1000px)"
+                    srcset="Media/other_works_images/Lettering_Pattern_Art_large.jpg"/>
+        
+                <source
+                    media="(min-width: 600px)"
+                    srcset="Media/other_works_images/Lettering_Pattern_Art_medium.jpg"/>
+        
+                <img src="Media/other_works_images/Lettering_Pattern_Art_small.jpg" alt="Image of a wave-like shape with a swirly sky pattern.">
+            </picture> 
+            <p class="other">Graphic Design Sample: Art inspired by patterns and name initials done with Illustrator</p>
+        </div>
+
+        <div>
+            <picture> 
+                <source
+                    media="(min-width: 1000px)"
+                    srcset="Media/other_works_images/Low_Poly_Self_Portrait_large.jpg"/>
+        
+                <source
+                    media="(min-width: 600px)"
+                    srcset="Media/other_works_images/Low_Poly_Self_Portrait_small.jpg"/>
+        
+                <img src="Media/other_works_images/Low_Poly_Self_Portrait_small.jpg" alt="Potrait of woman made of geometric shape.">
+            </picture> 
+            <p class="other">Graphic Design Sample: Lowpoly self potrait done using Photoshop</p>
+        </div>
+
+        <div>
+            <img src="media/Simple-Ball-Animation.gif" alt="A ball bouncing around and through boxes" height="17.71" width="370" class="responsive">
+            <p class="other">Animation Sample: A ball bouncing around and through boxes</p>
+        </div>
+    </div>
+
+<div> 
+    <a href="case_study_03.html">
+        <button>Case Study #3</button>
+    </a>
+    <a href="case_study_01.html">
+        <button>Case Study #1</button>
+    </a>
 </div>
-<div class="box"></div>
-<footer> 
-    <nav id="naviotherworks">
-        <h2 class="navi">Navigation</h2>
-            <a href="Index.html">
-                <button class="navbutton">Home</button>
-            </a>
-            <br><a href="case_study_01.html">
-                <button class="navbutton">Portfolio</button>
-            </a>
-            <br><a href="Resume.html">
-                <button class="navbutton">Resume</button>
-            </a>
-            <br><a href="About_Me_Contact.html">
-                <button class="navbutton">About Me</button>
-            </a>
-    </nav>
-</footer>
+
+<div id="NaviMenu">
+    <h2 class="navi">Navigation</h2>
+        <a href="Index.html">
+            <button class="navbutton">Home</button>
+        </a>
+        <br><a href="case_study_01.html">
+            <button class="navbutton">Portfolio</button>
+        </a>
+        <br><a href="Resume.html">
+            <button class="navbutton">Resume</button>
+        </a>
+        <br><a href="About_Me_Contact.html">
+            <button class="navbutton">About Me</button>
+        </a>
+</div>
 </body>
 </html>
