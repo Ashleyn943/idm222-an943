@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'CrimsonText';
+    src: url(CSS/Fonts/CrimsonText-Regular.ttf) format('truetype'),
+    url(CSS/Fonts/CrimsonText-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(CSS/Fonts/Lato-Regular.ttf) format('truetype'),
+    url(CSS/Fonts/Lato-Regular.woff2) format('woff2');
+}
+
+:root{
+    --cream-100:#FFE2D5;
+    --pink-100:#FFF0F3;
+    --pink-200:#FFCCD5;
+    --pink-300:#FF8FA3;
+    --pink-400:#FF4D6D;
+    --pink-500:#590D22;
+    --pink-600:#2D0510;
+    --green-500:#115745;
+
+    --background:var(--cream-100);
+    --foreground:var(--pink-600);
+    --links:var(--green-500);
+}
+
+html{
+    box-sizing: border-box;
+    background-color: var(--background);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+body{
+    color: var(--foreground);
+}
+
+div{
+
+}
+    #head{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .separator{
+        height: 1.75rem;
+    }
+        #headerSepar{
+            border-top: .25rem solid var(--pink-600);
+        }
+
+/* Buttons */
+button{
+    cursor: pointer;
+    background-color: var(--pink-400);
+    color: var(--pink-100);
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: transparent;
+    margin: 1rem auto 2.5rem;
+    padding: 1rem;
+    border: .25rem solid var(--pink-600);
+    border-radius: 2rem;
+}
+    #open{
+        background-color: transparent;
+        border: transparent;
+        margin: 0;
+        padding: 0;
+    }
+        #hammenu, #logo{
+            max-width: 75px;
+            height: auto;
+            align-self: center;
+        }
+
+    button:hover{
+        color: var(--links);
+    }
+
+/*text*/
+h1, h2, h3, h4, h5{
+    font-family: 'CrimsonText', Georgia, 'Times New Roman', Times, serif;
+}
+
+    h4{
+        font-size: 1.5rem;
+        margin: .5rem auto .75rem;
+        text-align: center;
+    }
+
+    .titles, .subtitle, .HomeToStudies, h4{
+        display: flex;
+        justify-content: center;
+    }
+
+/*images*/
+picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
