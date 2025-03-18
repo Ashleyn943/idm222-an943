@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="normalize" href="CSS/normalize.css">
-    <link rel="stylesheet" href="css/Style_Sheet.css">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
     <title>Ashley Nguyen's Works</title>
 </head>
 <body> 
     <div id="head">
         <a href="Index.html">
-                <img src="Media/website_logo.png" alt="Website Logo" height="60" width="60" class="logo">
-                <p class="heading logo">Ashley Nguyen's Works</p>
+                <img src="Media/website_logo.png" alt="Website Logo" id="logo">
         </a>
-            <a href="#navihome"><img src="media/Hamburger-Menu.png" alt="Hamburger-Menu" height="60" width="60" class="menu"></a>
+        <button id="open"><img src="media/Hamburger-Menu.png" alt="Hamburger-Menu" id="hammenu"></button>
     </div>
     <hr>
     <div> 
@@ -132,21 +131,19 @@
     </a>
 </div>
 
-<div id="NaviMenu">
-    <h2 class="navi">Navigation</h2>
+<div id="NaviMenu" class="hideme">
+    <h3 class="navi">Navigation</h3>
         <a href="Index.html">
-            <button class="navbutton">Home</button>
-        </a>
-        <br><a href="case_study_01.html">
-            <button class="navbutton">Portfolio</button>
-        </a>
-        <br><a href="Resume.html">
-            <button class="navbutton">Resume</button>
-        </a>
-        <br><a href="About_Me_Contact.html">
-            <button class="navbutton">About Me</button>
-        </a>
+            <button class="popups">Home</button></a>
+            <br>
+        <a href="case_study_01.html">
+            <button class="popups">Portfolio</button></a>
+            <br>
+        <a href="Resume.html">
+            <button class="popups">Resume</button></a>
+            <br>
+        <a href="About_Me_Contact.html">
+            <button class="popups">About Me</button></a>
 </div>
-
 </body>
 </html>

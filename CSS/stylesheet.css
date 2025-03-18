@@ -25,6 +25,7 @@
     --links:var(--green-500);
 }
 
+/*others*/
 html{
     box-sizing: border-box;
     background-color: var(--background);
@@ -47,9 +48,11 @@ div{
     .separator{
         height: 1.75rem;
     }
-        #headerSepar{
-            border-top: .25rem solid var(--pink-600);
-        }
+
+hr{
+    border: .2rem solid var(--pink-600);
+    margin: 0 auto 2rem;
+}
 
 /* Buttons */
 button{
@@ -59,7 +62,6 @@ button{
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
-    text-decoration: transparent;
     margin: 1rem auto 2.5rem;
     padding: 1rem;
     border: .25rem solid var(--pink-600);
@@ -76,7 +78,14 @@ button{
             height: auto;
             align-self: center;
         }
-
+    .popups{
+        background-color: var(--pink-400);
+        color: var(--pink-100);
+        margin: 0;
+        padding: 1rem;
+        border: 0;
+        border-radius: 0;
+    }
     button:hover{
         color: var(--links);
     }
@@ -84,10 +93,23 @@ button{
 /*text*/
 h1, h2, h3, h4, h5{
     font-family: 'CrimsonText', Georgia, 'Times New Roman', Times, serif;
+    margin: 1rem auto 0;
 }
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h2{
+        font-size: 1.75rem;
+    }
+
+    h3{
+        font-size: 1.2rem;
+        margin: .2rem auto;
+    }
 
     h4{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin: .5rem auto .75rem;
         text-align: center;
     }
@@ -96,6 +118,13 @@ h1, h2, h3, h4, h5{
         display: flex;
         justify-content: center;
     }
+        .subtitle{
+            margin-bottom: .75rem;
+        }
+p{
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
 
 /*images*/
 picture{
@@ -104,4 +133,10 @@ picture{
     justify-content: center;
     margin: 0 auto;
     max-width: 1000px;
+}
+
+/*Styling for JS*/
+
+.hideme{
+    display: none;
 }
