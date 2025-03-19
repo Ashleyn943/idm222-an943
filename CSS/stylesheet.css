@@ -62,7 +62,7 @@ div{}
 
 hr{
     border: .2rem solid var(--pink-600);
-    margin: 0 auto 2rem;
+    margin: 0 0 2rem;
 }
     .separJobs{
         border: .001rem solid var(--pink-600);
@@ -146,6 +146,9 @@ h1, h2, h3, h4, h5{
     h2{
         font-size: 1.75rem;
     }
+        mark{
+            background-color: var(--pink-400);
+        }
 
     h3{
         font-size: 1.2rem;
@@ -266,9 +269,21 @@ picture{
         margin: auto 1.5rem;
     }
     #Thumbnails{
-        display: flexbox;
+        display: flex;
         flex-direction: column;
     }
+    #SideBySide{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+        #SideBySide p{
+            grid-row: 2/3;
+        }
+        #SideBySide picture{
+            margin: 0 auto;
+        }
+
 }
 
 @media screen and (min-width: 1000px) {

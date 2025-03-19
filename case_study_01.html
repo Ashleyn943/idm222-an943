@@ -13,6 +13,21 @@
                 <img src="Media/website_logo.png" alt="Website Logo" id="logo">
         </a>
         <button class="openMenu"><img src="media/Hamburger-Menu.png" alt="Hamburger-Menu" id="hammenu"></button>
+        <div class="NaviMenu hideme">
+            <button class="closeMenu">&#10005</button>
+            <h3 class="navi">Navigation</h3>
+                <a href="Index.html">
+                    <button class="popups">Home</button></a>
+                    <br>
+                <a href="case_study_01.html">
+                    <button class="popups">Portfolio</button></a>
+                    <br>
+                <a href="Resume.html">
+                    <button class="popups">Resume</button></a>
+                    <br>
+                <a href="About_Me_Contact.html">
+                    <button class="popups">About Me</button></a>
+        </div>
     </div>
     <hr>
     <div> 
@@ -93,31 +108,17 @@
         <p>
             Below, I featured both the original website and the team’s redesign. We all came to the consensus that the text size was too small and the entire website was overwhelming to look at. For the sake of information hierarchy, we put all the products into their own boxes to give the users an easier viewing experience. We also utilized features eBay already had. They put some of their products in boxes. so we just made sure all the products were in boxes. This way, the overall design was much more concise and less overwhelming to look at.
         </p>
-
-    <picture> 
-        <source
-            media="(min-width: 1000px)"
-            srcset="Media/ebay_images/OG_eBay_Full_large (1).png"/>
-
-        <source
-            media="(min-width: 600px)"
-            srcset="Media/ebay_images/OG_eBay_Full_medium (1).png"/>
-
-        <img src="Media/ebay_images/OG_eBay_Full_small.png" alt="Original design of eBay's website.">
-    </picture>
-        <p class="caption">Original eBay website</p>
-    <picture> 
-        <source
-            media="(min-width: 1000px)"
-            srcset="Media/ebay_images/redesigned_final_large (1).png"/>
-
-        <source
-            media="(min-width: 600px)"
-            srcset="Media/ebay_images/redesigned_final_medium.png"/>
-
-        <img src="Media/ebay_images/redesigned_final_small.png" alt="Team redesign of eBay's website.">
-    </picture>
-        <p class="caption">Full redesigned eBay website</p>
+    <div id="SideBySide">
+        <picture> 
+            <img src="Media/ebay_images/OG_eBay_Full_small.png" alt="Original design of eBay's website.">
+        </picture>
+            <p class="caption">Original eBay website</p>
+            
+        <picture> 
+            <img src="Media/ebay_images/redesigned_final_small.png" alt="Team redesign of eBay's website.">
+        </picture>
+            <p class="caption">Full redesigned eBay website</p>
+    </div>
 </div>
 <div>
     <h4 class="studysHead">What I would do differently</h4>
@@ -135,21 +136,6 @@
     </a>
 </div>
 
-<div class="NaviMenu hideme">
-    <button class="closeMenu">&#10005</button>
-    <h3 class="navi">Navigation</h3>
-        <a href="Index.html">
-            <button class="popups">Home</button></a>
-            <br>
-        <a href="case_study_01.html">
-            <button class="popups">Portfolio</button></a>
-            <br>
-        <a href="Resume.html">
-            <button class="popups">Resume</button></a>
-            <br>
-        <a href="About_Me_Contact.html">
-            <button class="popups">About Me</button></a>
-</div>
 </body>
 <script src="postscript.js"></script>
 </html>
