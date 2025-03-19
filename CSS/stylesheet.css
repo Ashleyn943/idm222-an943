@@ -26,27 +26,24 @@
 }
 
 /*others*/
-html{
+html, body{
     box-sizing: border-box;
     background-color: var(--background);
+    color: var(--foreground);
     max-width: 1000px;
     margin: 0 auto;
-}
-
-body{
-    color: var(--foreground);
+    padding: 0;
 }
 
 div{}
     #head{
         display: flex;
         justify-content: space-between;
+        background-color: var(--pink-400);
     }
-
     .separator{
         height: 1.75rem;
     }
-
     .NaviMenu{
         background-color: var(--pink-400);
         color: var(--pink-100);
@@ -57,7 +54,6 @@ div{}
         width: 12.5rem;
         z-index: 2;
     }
-
     #gifcontainer, #aboutMeDes{
         display:flex;
         flex-direction: column;
@@ -118,17 +114,14 @@ button{
         justify-content: space-evenly;
         margin: 1.5rem auto;
     }
-
     #prototypeLink{
         display:flex;
         justify-self: center;
     }
-
     #downloadable{
         font-size: 1.1rem;
         justify-self: center;
     }
-
     a{
         text-decoration: none
     }
@@ -163,7 +156,6 @@ h1, h2, h3, h4, h5{
             padding: 1rem;
             text-decoration: underline;
         }
-
         .resumeHeads{
             font-size: 1.5rem;
         }
@@ -177,8 +169,6 @@ h1, h2, h3, h4, h5{
             font-size: 1.5rem;
             margin: 1.5rem auto .75rem;
         }
-
-
         #link{
             text-align: center;
         }
@@ -201,12 +191,10 @@ p{
         margin: .1rem .5rem 1.5rem;
         text-align: center;
     }
-
     .other{
         margin: .1rem .5rem 1.5rem;
         text-align: center;
     }
-
     #personalDes{
         margin-bottom: 1rem;
     }
@@ -234,11 +222,10 @@ picture{
     margin: .5rem auto;
     max-width: 1000px;
 }
-
     #selfie{
         height:100%;
         width: 12rem;
-        border: .75rem solid var(--pink-300);
+        border: .75rem solid var(--pink-500);
         border-radius: 1.8rem;
         margin-bottom: 1rem;
     }
@@ -250,7 +237,57 @@ picture{
 }
 
 /*Styling for JS*/
-
 .hideme{
     display: none;
 }
+
+@media screen and (min-width: 600px) {
+/*Navigation Styling*/
+    .openMenu, .closeMenu, .navi{
+        display: none;
+    }
+        .NaviMenu, .hideme{
+          display: flex;
+          justify-content: right;
+          align-content: center;
+          background-color: transparent;
+        }
+        .popups{
+            background-color: transparent;
+            color: var(--pink-500);
+            text-decoration: underline;
+            width: 7.75rem;
+            margin-top: 1.75rem;
+        }
+        a{
+            height: 4.8rem;
+        }
+    #IntroText{
+        margin: auto 1.5rem;
+    }
+    #Thumbnails{
+        display: flexbox;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    /*Navigation Styling*/
+        .openMenu, .closeMenu, .navi{
+            display: none;
+        }
+            .NaviMenu, .hideme{
+                position: relative;
+                display: flex;
+                justify-content: right;
+                align-content: center;
+                background-color: transparent;
+            }
+            .popups{
+                background-color: transparent;
+                color: var(--pink-500);
+                text-decoration: underline;
+                width: 7.75rem;
+                margin: 1.75rem auto 0 0 ;
+            }
+    }
