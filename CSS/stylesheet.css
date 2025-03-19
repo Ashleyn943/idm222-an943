@@ -264,7 +264,10 @@ picture{
         }
         a{
             height: 4.8rem;
+            margin-bottom: 1rem;
         }
+
+/*text*/
     #IntroText{
         margin: auto 1.5rem;
     }
@@ -272,6 +275,11 @@ picture{
         display: flex;
         flex-direction: column;
     }
+    .HomeToStudies{
+            margin: .5rem auto 1rem;
+        }
+
+/*images*/
     #SideBySide{
         display: grid;
         grid-template-columns: auto auto;
@@ -284,6 +292,16 @@ picture{
             margin: 0 auto;
         }
 
+    .gif{
+    height: 100%;
+    width: 30.25rem;
+    }
+
+    #selfie{
+        height:100%;
+        width: 24rem;
+        border-radius: 3rem;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -304,5 +322,20 @@ picture{
                 text-decoration: underline;
                 width: 7.75rem;
                 margin: 1.75rem auto 0 0 ;
+            }
+    /*text*/
+        p{
+            margin: .1rem 1.5rem 1.5rem;
+        }
+            .caption{
+                font-size: 1rem;
+                margin: .1rem .5rem 1.5rem;
+                text-align: center;
+            }
+
+    /*images*/
+        .gif{
+            height: 100%;
+            width: 53.125rem;
             }
     }
