@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="normalize" href="CSS/normalize.css">
-    <link rel="stylesheet" href="css/Style_Sheet.css">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
     <title>Ashley Nguyen's Works</title>
 </head>
 <body>
     <div id="head">
         <a href="Index.html">
-                <img src="Media/website_logo.png" alt="Website Logo" height="60" width="60" class="logo">
-                <p class="heading logo">Ashley Nguyen's Works</p>
+                <img src="Media/website_logo.png" alt="Website Logo" id="logo">
         </a>
-            <a href="#navihome"><img src="media/Hamburger-Menu.png" alt="Hamburger-Menu" height="60" width="60" class="menu"></a>
+        <button class="openMenu"><img src="media/Hamburger-Menu.png" alt="Hamburger-Menu" id="hammenu"></button>
     </div>
     <hr>
     <div>
@@ -34,14 +33,14 @@
     </div>
 
     <div>
-        <h4>Overview</h4>
+        <h4 class="studysHead">Overview</h4>
             <p> 
                 For a mobile interface design class, I was tasked to design an app based on another app while making improvements to its features. I chose to create a voice chat app based on the app Discord using Figma.
             </p>
     </div>
 
     <div>
-    <h4>Research</h4>
+    <h4 class="studysHead">Research</h4>
         <p> 
             Before designing any screens, I looked at how Discord's voice chat worked. Using Figma, I drew lines and made notes on how all the screens are connected. While doing so, I picked out the fetures I wanted to add in my app to improve on it.
         </p>
@@ -57,10 +56,11 @@
 
             <img src="Media/squabble_images/Squabble_Discord_Interface_Study_small.jpg" alt="Screenshots of Discord's voice chat menus studying how each button works.">
         </picture>
+            <p class="caption">Study of how Discord's voice chat system works</p>
     </div>
 
     <div>
-        <h4>Rough Sketches + Branding</h4>
+        <h4 class="studysHead">Rough Sketches + Branding</h4>
             <p>
                 I started by sketching possible screens for my mobile app. I tried to focus on aspects of Discord that I would want to add, such as the ability to see who is speaking on other screens and an easier way to see if someone is muted or deafened. Half of my sketches were based on one of the brand ideas I had, which after some peer review, I went with.
             </p>
@@ -76,7 +76,7 @@
     
                 <img src="Media/squabble_images/Squabble_Screen_Sketches_small.jpg" alt="Initial sketches of screens for app.">
             </picture>
-        
+                <p class="caption">Sketches of possible screens and brandings for new app</p>
             <p>
                 During this stage, I also started to come up with possible names, fonts, and color palettes for the app. For the color palette, I wanted to stick to neutral colors and with one accent color to keep things simple. The app eventually evolved to have more browns to further push the bird theme. While Discord is full of bright colors, I think a more neutral palette could attract just about everyone. As for fonts, I wanted to choose something that would be easy to read and a font that would fit the fun theme of the app. However, I simplified the font to just Alegreya Sans as the curly Supermercado font gets in the way of readability.
             </p>
@@ -92,10 +92,11 @@
     
                 <img src="Media/squabble_images/Squabble_Branding_Ideation_small.jpg" alt="Possible names, fonts, color palette, and logo for the app in a spread.">
             </picture>
+                <p class="caption">Possible names, fonts, color palatte, and logo for the new app</p>
     </div>
 
     <div>
-        <h4>Iterations</h4>
+        <h4 class="studysHead">Iterations</h4>
             <p>
                 My first prototype was created with visibility and usability in mind. I made text and buttons large so most users could read and tap them. I enlarged the buttons as they do exist on Discord but they are barely noticeable. I also simplified how the voice chat worked. I placed all the major buttons on the voice chat screen to make it easier to control. In addition, I added a visual element that shows everyone inside the voice chat if a person has all voices muted. This is the egg overlay that sits over a person’s profile picture.
             </p>
@@ -110,7 +111,7 @@
     
                 <img src="Media/squabble_images/Squabble_First_Wireframe_small.jpg" alt="Initial designs for the Squabble's screens.">
             </picture>
-      
+                <p class="caption">Initial prototype design for Squabble</p>
             <p>
                 Afterwards, I made sketches of what I wanted animated on the screen. These were to help give me a better idea of what could be done with my skillset. They ranged from simple animations, such as buttons jiggling to indicate that they have been pressed and screens sliding in, to the aforementioned egg animations. I initially did rough sketches of the main animations before using a prototype to outline all the animations I needed. Additionally on this page, I indicated all the motions that could be used on the app.
             </p>
@@ -125,7 +126,7 @@
     
                 <img src="Media/squabble_images/Squabble_Animation_Sketches_small.jpg" alt="Sketches for possible animations.">
             </picture>
-
+                <p class="caption">Sketches for possible animations to be implemented</p>
             <picture> 
                 <source
                     media="(min-width: 1000px)"
@@ -137,10 +138,11 @@
     
                 <img src="Media/squabble_images/Squabble_Animation_Mockup_small.jpg" alt="Prototypes with lines and notes indicating what buttons and motions on the screen do in the app.">
             </picture>
+                <p class="caption">Animation plans indicating what buttons do what and how to activate them</p>
     </div>
 
     <div>
-        <h4>Final Prototype</h4>
+        <h4 class="studysHead">Final Prototype</h4>
         <p>
             In the final iteration, I shrunk down the buttons to be a more reasonable size. This way, the user could focus on the most important buttons before seeing the other features on screen.
         </p>
@@ -155,26 +157,27 @@
 
             <img src="Media/squabble_images/Squabble_Final_Workspace_small.jpg" alt="Figma workspace showing all the screens and animations for final prototype.">
         </picture>
+            <p class="caption">Final Figma page with the final screens</p>
     </div>
 
 <div>
-    <h4>What I would do differently</h4>
+    <h4 class="studysHead">What I would do differently</h4>
         <p>
             If there is anything I would change, it would just be adding sound to the animations. The final prototype does work to show the functions of the app but I think adding some sound effects would enhance the experience. I would have also liked to tidy up a few buttons, such as some of the switches as they were a little buggy.
         </p>
 </div> 
 
 <div> 
-    <h5 id="link">Want to try it out?</h5>
+    <h5 id="link" class="studysHead">Want to try it out?</h5>
         <p>
             If you would like to experience the prototype first hand, here’s a link to test it out:
-            <a href="https://www.figma.com/proto/vqvx5MyAZInZwAtsKgXSVB/Final-Thing-AHHHHHH?page-id=0%3A1&node-id=34-191&node-type=frame&viewport=1315%2C423%2C0.13&t=loHw7H08H2K8Q3r3-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=34%3A191" target="_blank">
-                <button>Squabble Prototype</button>
-            </a>
         </p>
+        <a href="https://www.figma.com/proto/vqvx5MyAZInZwAtsKgXSVB/Final-Thing-AHHHHHH?page-id=0%3A1&node-id=34-191&node-type=frame&viewport=1315%2C423%2C0.13&t=loHw7H08H2K8Q3r3-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=34%3A191" target="_blank">
+            <button id="prototypeLink">Squabble Prototype</button>
+        </a>
 </div>
 
-    <div>
+    <div id="NextBack">
         <a href="case_study_02.html">
             <button>Case Study #2</button>
         </a>
@@ -183,20 +186,21 @@
         </a>
     </div>
 
-<div id="NaviMenu">
-    <h2 class="navi">Navigation</h2>
-        <a href="Index.html">
-            <button class="navbutton">Home</button>
-        </a>
-        <br><a href="case_study_01.html">
-            <button class="navbutton">Portfolio</button>
-        </a>
-        <br><a href="Resume.html">
-            <button class="navbutton">Resume</button>
-        </a>
-        <br><a href="About_Me_Contact.html">
-            <button class="navbutton">About Me</button>
-        </a>
-</div>
-</body>
+    <div class="NaviMenu hideme">
+        <button class="closeMenu">&#10005</button>
+        <h3 class="navi">Navigation</h3>
+            <a href="Index.html">
+                <button class="popups">Home</button></a>
+                <br>
+            <a href="case_study_01.html">
+                <button class="popups">Portfolio</button></a>
+                <br>
+            <a href="Resume.html">
+                <button class="popups">Resume</button></a>
+                <br>
+            <a href="About_Me_Contact.html">
+                <button class="popups">About Me</button></a>
+    </div>
+    </body>
+    <script src="postscript.js"></script>
 </html>

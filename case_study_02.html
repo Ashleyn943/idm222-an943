@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="normalize" href="CSS/normalize.css">
-    <link rel="stylesheet" href="css/Style_Sheet.css">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
     <title>Ashley Nguyen's Works</title>
 </head>
-<body> 
+<body>
     <div id="head">
         <a href="Index.html">
-                <img src="Media/website_logo.png" alt="Website Logo" height="60" width="60" class="logo">
-                <p class="heading logo">Ashley Nguyen's Works</p>
+                <img src="Media/website_logo.png" alt="Website Logo" id="logo">
         </a>
-            <a href="#navihome"><img src="media/Hamburger-Menu.png" alt="Hamburger-Menu" height="60" width="60" class="menu"></a>
+        <button class="openMenu"><img src="media/Hamburger-Menu.png" alt="Hamburger-Menu" id="hammenu"></button>
     </div>
     <hr>
     <div>
         <h1 class="casestudy">
-            Eco Points – A Product that Encourages Recycling
+            Eco Points: <br> A Product that Encourages Recycling
         </h1>
         <picture> 
             <source
@@ -34,7 +33,7 @@
     </div>
 
     <div>
-        <h4>Overview</h4>
+        <h4 class="studysHead">Overview</h4>
             <p> 
                 For a product design class, I worked with 3 team members to pitch a hypothetical multimedia product to help a problem in the community. For this month-long project, our goal was to help educate people on how to properly recycle and encourage people to do it more. We researched using news articles and surveys to truly understand how audiences see the problem.
 
@@ -43,7 +42,7 @@
     </div>
 
     <div>
-        <h4>Research</h4>
+        <h4 class="studysHead">Research</h4>
             <p>
                 Our target audience was college students so we conducted a survey that was passed around Drexel’s campus to gather a diverse pool of answers. In the end, the majority of students agreed about recycling.
 
@@ -59,16 +58,16 @@
                     media="(min-width: 600px)"
                     srcset="Media/ecopoints_images/Eco_Points_Survey_medium.jpg"/>
     
-                <img src="Media/ecopoints_images/Eco_Points_Survey_small.jpg" alt="Results from research survey to gauge people's knowledge on recycling.">
+                <img src="Media/ecopoints_images/Eco_Points_Survey_small.jpg" alt="Results from research survey to gauge people's knowledge on recycling."> 
             </picture>
-
+                <p class="caption">Survey results</p>
             <p>
                 We also looked into apps and products that try to achieve a similar goal to see what we can do to improve upon them.
             </p>
     </div>
 
     <div>
-        <h4>Rough Sketches</h4>
+        <h4 class="studysHead">Rough Sketches</h4>
             <p>
                 The team created 20 different sketches and ideas for our product. We took the best ideas from this sample to create our final products. I mainly focused on creating sketches for the mobile app as that was my job on the team.
             </p>
@@ -84,10 +83,11 @@
 
             <img src="Media/ecopoints_images/Eco_Points_ideation_sketches_small.jpg" alt="Sketches from all team members on possible apps and products.">
         </picture>
+            <p class="caption">Ideation sketches for possible products</p>
     </div>
 
     <div>
-        <h4>Final Prototype</h4>
+        <h4 class="studysHead">Final Prototype</h4>
             <p>
                 This was the final design I came up with for the app. I used green and a neutral beige to give users an environmentally friendly look. Like a lot of other products that promote helping the environment. The app allows users to connect to a recycling bin and recycle the products correctly. They can scan the item and the app will tell users how to prep the item for recycling. This app also rewards the users with points that they can use to purchase items from a vending machine.
             </p>
@@ -103,16 +103,17 @@
 
             <img src="Media/ecopoints_images/Eco_Points_Final_Wireframes_small.jpg" alt="All screens created for proposed app.">
         </picture>
+            <p class="caption">Figma worktop with all screens of prototype</p>
     </div>
 
     <div>
-        <h4>What I would do differently</h4>
+        <h4 class="studysHead">What I would do differently</h4>
             <p>
                 I would take more time making the design cleaner. While it is a prototype, I think the cleaner environment aesthetic could be brought across clearer. I would also have liked to implement a way to make the features work on the prototype.
             </p>
     </div>
 
-    <div>
+    <div id="NextBack">
         <a href="case_study_01.html">
             <button>Case Study #1</button>
         </a>
@@ -121,20 +122,21 @@
         </a>
     </div>
 
-<div id="NaviMenu">
-    <h2 class="navi">Navigation</h2>
-        <a href="Index.html">
-            <button class="navbutton">Home</button>
-        </a>
-        <br><a href="case_study_01.html">
-            <button class="navbutton">Portfolio</button>
-        </a>
-        <br><a href="Resume.html">
-            <button class="navbutton">Resume</button>
-        </a>
-        <br><a href="About_Me_Contact.html">
-            <button class="navbutton">About Me</button>
-        </a>
-</div>
-</body>
+    <div class="NaviMenu hideme">
+        <button class="closeMenu">&#10005</button>
+        <h3 class="navi">Navigation</h3>
+            <a href="Index.html">
+                <button class="popups">Home</button></a>
+                <br>
+            <a href="case_study_01.html">
+                <button class="popups">Portfolio</button></a>
+                <br>
+            <a href="Resume.html">
+                <button class="popups">Resume</button></a>
+                <br>
+            <a href="About_Me_Contact.html">
+                <button class="popups">About Me</button></a>
+    </div>
+    </body>
+    <script src="postscript.js"></script>
 </html>
