@@ -59,6 +59,9 @@ div{}
         flex-direction: column;
         align-items: center;
     }
+    #IntroText{
+        margin: auto .6rem;
+    }
 
 hr{
     border: .2rem solid var(--pink-600);
