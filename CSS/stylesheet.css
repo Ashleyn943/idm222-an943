@@ -30,7 +30,6 @@ html, body{
     box-sizing: border-box;
     background-color: var(--background);
     color: var(--foreground);
-    max-width: 1000px;
     margin: 0 auto;
     padding: 0;
 }
@@ -51,9 +50,20 @@ div{}
         top: 0;
         right: 0;
         height: 100%;
-        width: 12.5rem;
         z-index: 2;
     }
+        .NaviMenuFoot{
+            position: relative;
+            display: flex;
+            justify-content: right;
+            align-content: center;
+            background-color: transparent;
+            margin: auto;
+            text-align: center;
+            .navi{
+                display: none;
+            }
+        }
     #gifcontainer, #aboutMeDes{
         display:flex;
         flex-direction: column;
@@ -73,7 +83,7 @@ hr{
     }
 
 /* Buttons */
-button{
+a{
     cursor: pointer;
     background-color: var(--pink-400);
     color: var(--pink-100);
@@ -84,22 +94,27 @@ button{
     padding: 1rem;
     border: .25rem solid var(--pink-600);
     border-radius: 2rem;
+    text-decoration: none
 }
     .openMenu{
         background-color: transparent;
         border: transparent;
-        margin: 0;
+        margin: auto .5rem auto auto;
         padding: 0;
     }
-        #hammenu, #logo{
+        #hammenu, #logoBut{
             max-width: 75px;
             height: auto;
-            align-self: center;
+            background-color: transparent;
+            border: transparent;
+            margin: auto auto auto .05rem;
         }
+    
     .closeMenu{
         font-size: 3rem;
         border: none;
         margin: 0 0 0 8rem;
+        background-color: transparent;
     }
     .popups{
         background-color: var(--pink-400);
@@ -108,8 +123,9 @@ button{
         padding: 1rem;
         border: 0;
         border-radius: 0;
+        line-height: 3rem;
     }
-    button:hover{
+    a:hover{
         color: var(--links);
     }
     #NextBack{
@@ -124,9 +140,6 @@ button{
     #downloadable{
         font-size: 1.1rem;
         justify-self: center;
-    }
-    a{
-        text-decoration: none
     }
         #LinkedIn{
             color:var(--green-500);
@@ -148,9 +161,14 @@ h1, h2, h3, h4, h5{
 
     h2{
         font-size: 1.75rem;
+        margin: 1rem auto;
     }
         mark{
             background-color: var(--pink-400);
+        }
+
+        .ThumbnailTitles{
+            text-align: center;
         }
 
     h3{
@@ -186,6 +204,10 @@ h1, h2, h3, h4, h5{
         .subtitle{
             margin-bottom: .75rem;
             text-align: center;
+        }
+        .HomeToStudies{
+            width: 21.1875rem;
+            margin-bottom: 5rem;
         }
 p{
     font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -249,25 +271,18 @@ picture{
 
 @media screen and (min-width: 600px) {
 /*Navigation Styling*/
-    .openMenu, .closeMenu, .navi{
-        display: none;
-    }
-        .NaviMenu, .hideme{
-          display: flex;
-          justify-content: right;
-          align-content: center;
-          background-color: transparent;
-        }
         .popups{
             background-color: transparent;
             color: var(--pink-500);
-            text-decoration: underline;
             width: 7.75rem;
             margin-top: 1.75rem;
         }
         a{
-            height: 4.8rem;
             margin-bottom: 1rem;
+        }
+
+        #logoBut{
+            margin: auto auto auto .5rem;
         }
 
 /*text*/
@@ -279,7 +294,7 @@ picture{
         flex-direction: column;
     }
     .HomeToStudies{
-            margin: .5rem auto 1rem;
+            margin: .5rem auto 5rem;
         }
 
 /*images*/
@@ -318,14 +333,24 @@ picture{
                 justify-content: right;
                 align-content: center;
                 background-color: transparent;
+                margin: auto 10rem auto auto;
+                text-align: center;
             }
             .popups{
                 background-color: transparent;
-                color: var(--pink-500);
-                text-decoration: underline;
+                color: var(--pink-100);
                 width: 7.75rem;
                 margin: 1.75rem auto 0 0 ;
             }
+
+            #logoBut{
+                margin: auto auto auto 10rem;
+            }
+
+                .HomeToStudies{
+                    margin: .5rem auto 6rem;
+                }
+
     /*text*/
         p{
             margin: .1rem 1.5rem 1.5rem;
@@ -334,6 +359,10 @@ picture{
                 font-size: 1rem;
                 margin: .1rem .5rem 1.5rem;
                 text-align: center;
+            }
+
+            #IntroText{
+                margin: auto 15rem;
             }
 
     /*images*/
