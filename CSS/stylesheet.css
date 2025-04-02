@@ -34,6 +34,7 @@ html, body{
     padding: 0;
 }
 
+/*divs + related boxes*/
 div{}
     #head{
         display: flex;
@@ -41,7 +42,7 @@ div{}
         background-color: var(--pink-400);
     }
     .separator{
-        height: 1.75rem;
+        height: 1.75rem; 
     }
     .NaviMenu{
         background-color: var(--pink-400);
@@ -74,6 +75,10 @@ div{}
     }
     #IntroText{
         margin: auto .6rem;
+    }
+
+    #contactInfo{
+        margin: auto .5rem auto;
     }
 
 hr{
@@ -400,6 +405,8 @@ picture{
                 .HomeToStudies{
                     margin: .5rem auto 6rem;
                 }
+
+    /*Divs + other boxes*/
         #NextBackColor{
             background-color: var(--pink-400);
             margin: 1rem auto auto;
@@ -411,6 +418,22 @@ picture{
         #ResContent{
             margin: auto 15rem auto;
         }
+
+        hr{
+            margin: auto 10rem auto;
+        }
+            .separHeader{
+                margin: 0 0 2rem;
+            }
+
+            .separSection{
+                margin: 1.5rem 0;
+            }
+
+        #contactInfo{
+            margin: auto 12rem;
+        }
+        
     /*text*/
         p{
             font-size: 1.3rem;
@@ -438,5 +461,20 @@ picture{
             .jobDets, .EduDets{
                 margin: auto .75rem auto;
             }
-        
+
     }
+
+@media screen and (min-width: 1300px) {
+    #aboutMeDes{
+        flex-direction: row;
+        margin: auto 15rem;
+    }
+
+    #personalDes{
+        margin: auto 1rem auto;
+    }
+
+    #contactInfo{
+        margin: auto 15rem;
+    }
+}
