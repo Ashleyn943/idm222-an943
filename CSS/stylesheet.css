@@ -63,6 +63,9 @@ div{}
             .navi{
                 display: none;
             }
+            a{
+                line-height: 1.5rem;
+            }
         }
     #gifcontainer, #aboutMeDes{
         display:flex;
@@ -80,6 +83,11 @@ hr{
     .separJobs{
         border: .001rem solid var(--pink-600);
         margin: auto
+    }
+
+    .separSection{
+        border: .1rem solid var(--pink-600);
+        margin-top: 1.5rem;
     }
 
 /* Buttons */
@@ -131,18 +139,39 @@ a{
     #NextBack{
         display: flex;
         justify-content: space-evenly;
-        margin: 1.5rem auto;
+        margin: 1.5rem auto 0;
+
+        a:hover{
+          background-color: var(--pink-300);
+        }
     }
+        .caseNavi{
+            border: none;
+            border-radius: 0;
+            margin: 0 auto 0;
+            text-align: center;
+            width: 100%;
+        }
     #prototypeLink{
         display:flex;
         justify-self: center;
+        margin: auto 10rem 1.5rem;
     }
     #downloadable{
-        font-size: 1.1rem;
+        display:flex;
         justify-self: center;
+        font-size: 1.1rem;
+        margin: 1.5rem 2rem;
+        text-align: center
+        
     }
-        #LinkedIn{
+        .ContentLinks{
+            background-color: transparent;
+            border: none;
             color:var(--green-500);
+            font-size: 1.1375rem;
+            padding: 0;
+            margin: auto .5rem 1.5rem;
             text-decoration: underline;
         }
 
@@ -171,6 +200,10 @@ h1, h2, h3, h4, h5{
             text-align: center;
         }
 
+        .resumeHeads{
+            margin: auto .5rem auto;
+        }
+
     h3{
         font-size: 1.2rem;
         margin: .2rem auto;
@@ -180,8 +213,10 @@ h1, h2, h3, h4, h5{
             padding: 1rem;
             text-decoration: underline;
         }
-        .resumeHeads{
-            font-size: 1.5rem;
+        .jobPos{
+            font-family: 'Lato', Arial, Helvetica, sans-serif;
+            font-size: 1.1375rem;
+            margin: .5rem .75rem auto;
         }
 
     h4{
@@ -191,13 +226,14 @@ h1, h2, h3, h4, h5{
     }
         .studysHead{
             font-size: 1.5rem;
-            margin: 1.5rem auto .75rem;
+            margin: 1.5rem auto .75rem .75rem;
+            text-align: left;
         }
         #link{
             text-align: center;
         }
 
-    .titles, .subtitle, .HomeToStudies, h4{
+    .titles, .subtitle, .HomeToStudies{
         display: flex;
         justify-content: center;
     }
@@ -212,10 +248,10 @@ h1, h2, h3, h4, h5{
 p{
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
-    margin: .1rem .5rem .5rem;
+    margin: .1rem .75rem .5rem;
 }
     .caption{
-        font-size: .75rem;
+        font-size: .875rem;
         margin: .1rem .5rem 1.5rem;
         text-align: center;
     }
@@ -227,20 +263,28 @@ p{
         margin-bottom: 1rem;
     }
 
-ul{}
-    .jobDes{
+    .jobDets, ul.jobDes li, .EduDets{
+        font-size: 1rem;
+    }
+
+    ul.jobDes li{
         margin-left: 1.75rem;
     }
 
+    ul.EduDes{
+        margin: .25rem auto 1rem;
+
+        li{
+            font-size: 1rem;
+        }
+    }
+    
 li{
     font-family: 'Lato', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: .5rem;
 }
-    .experiTitle{
-        list-style-type: none;
-        margin-bottom: .1rem;
-    }
+
 
 /*images*/
 picture{
@@ -250,6 +294,11 @@ picture{
     margin: .5rem auto;
     max-width: 1000px;
 }
+    .ExImg img{
+        border: .75rem solid var(--pink-500);
+        border-radius: 1.8rem;
+    }
+
     #selfie{
         height:100%;
         width: 12rem;
@@ -273,7 +322,7 @@ picture{
 /*Navigation Styling*/
         .popups{
             background-color: transparent;
-            color: var(--pink-500);
+            color: var(--pink-100);
             width: 7.75rem;
             margin-top: 1.75rem;
         }
@@ -302,6 +351,7 @@ picture{
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
+        margin: 0 10rem;
     }
         #SideBySide p{
             grid-row: 2/3;
@@ -350,10 +400,22 @@ picture{
                 .HomeToStudies{
                     margin: .5rem auto 6rem;
                 }
+        #NextBackColor{
+            background-color: var(--pink-400);
+            margin: 1rem auto auto;
+        }
+            #NextBack{
+                width: 80vw
+            }
 
+        #ResContent{
+            margin: auto 15rem auto;
+        }
     /*text*/
         p{
-            margin: .1rem 1.5rem 1.5rem;
+            font-size: 1.3rem;
+            margin: .1rem 12rem 1.75rem;
+            line-height: 1.5rem;
         }
             .caption{
                 font-size: 1rem;
@@ -365,9 +427,16 @@ picture{
                 margin: auto 15rem;
             }
 
-    /*images*/
-        .gif{
-            height: 100%;
-            width: 53.125rem;
+            .studysHead{
+                margin: auto 12rem .5rem;
             }
+
+            .other{
+                margin: auto 15rem 1.5rem
+            }
+
+            .jobDets, .EduDets{
+                margin: auto .75rem auto;
+            }
+        
     }
