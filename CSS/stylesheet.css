@@ -234,9 +234,6 @@ h1, h2, h3, h4, h5{
             margin: 1.5rem auto .75rem .75rem;
             text-align: left;
         }
-        #link{
-            text-align: center;
-        }
 
     .titles, .subtitle, .HomeToStudies{
         display: flex;
