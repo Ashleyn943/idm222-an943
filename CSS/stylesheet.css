@@ -41,6 +41,13 @@ div{}
         justify-content: space-between;
         background-color: var(--pink-400);
     }
+        #SocialContact{
+            position: relative;
+            text-align: center;
+            background-color: var(--pink-400);
+            padding-bottom: 1rem;
+            padding-top: .5rem;
+        }
     .separator{
         height: 1.75rem; 
     }
@@ -68,7 +75,7 @@ div{}
                 line-height: 1.5rem;
             }
         }
-    #gifcontainer, #aboutMeDes{
+    #gifcontainer, #aboutMeDes, #Thumbnails{
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -78,7 +85,15 @@ div{}
     }
 
     #contactInfo{
-        margin: auto .5rem auto;
+        margin: auto .5rem 1rem;
+    }
+    .CaseBlocks{
+        background-color: var(--pink-400);
+        border: .25rem solid var(--pink-500);
+        border-radius: 2rem;
+        margin: 2rem .5rem 3rem;
+        padding: 0;
+        text-align: center;
     }
 
 hr{
@@ -95,7 +110,11 @@ hr{
         margin-top: 1.5rem;
     }
 
-/* Buttons */
+span{
+    display: block;
+}
+
+/* Buttons/Anchor Elements */
 a{
     cursor: pointer;
     background-color: var(--pink-400);
@@ -141,6 +160,11 @@ a{
     a:hover{
         color: var(--links);
     }
+    .SocialIcons{
+        background-color: transparent;
+        border: transparent;
+        margin: 1rem auto 1.5rem;
+    }
     #NextBack{
         display: flex;
         justify-content: space-evenly;
@@ -168,7 +192,6 @@ a{
         font-size: 1.1rem;
         margin: 1.5rem 2rem;
         text-align: center
-        
     }
         .ContentLinks{
             background-color: transparent;
@@ -179,6 +202,14 @@ a{
             margin: auto .5rem 1.5rem;
             text-decoration: underline;
         }
+    .thumbnailBlocks{
+        background-color: transparent;
+        border: none;
+        display: inline-flex;
+        flex-direction: column;
+        padding: 0;
+        margin: auto auto -.8rem;
+    }
 
 /*text*/
 h1, h2, h3, h4, h5{
@@ -201,9 +232,16 @@ h1, h2, h3, h4, h5{
             background-color: var(--pink-400);
         }
 
-        .ThumbnailTitles{
-            text-align: center;
+        .ThumbnailTitles, .ThumbnailSubTitles{
+            text-align: left;
+            margin: 0 auto 0 .5rem;
+            padding: .5rem;
         }
+            .ThumbnailSubTitles{
+                font-size: 1rem;
+                font-weight: 400;
+                letter-spacing: .009rem;
+            }
 
         .resumeHeads{
             margin: auto .5rem auto;
@@ -223,7 +261,7 @@ h1, h2, h3, h4, h5{
             font-size: 1.1375rem;
             margin: .5rem .75rem auto;
         }
-
+        
     h4{
         font-size: 1.25rem;
         margin: .5rem auto .75rem;
@@ -289,9 +327,9 @@ li{
 
 
 /*images*/
+
 picture{
     display: flex;
-    align-items: center;
     justify-content: center;
     margin: .5rem auto;
     max-width: 1000px;
@@ -307,6 +345,19 @@ picture{
         border: .75rem solid var(--pink-500);
         border-radius: 1.8rem;
         margin-bottom: 1rem;
+    }
+    .OpenerImg img, .ThumbImg img{
+        border-radius: 2rem;
+    }
+
+    .ThumbImg{
+        width: 100%;
+        height: 100%;
+    }
+
+    .IconImg{
+        height: 100%;
+        width: 2rem;
     }
 
 .gif{
@@ -335,6 +386,12 @@ picture{
         #logoBut{
             margin: auto auto auto .5rem;
         }
+        #SocialContact{
+            padding-top: 1rem;
+        }
+        #contactInfo{
+            margin: auto .5rem 1.5rem;
+        }
 
 /*text*/
     #IntroText{
@@ -343,6 +400,7 @@ picture{
     #Thumbnails{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .HomeToStudies{
             margin: .5rem auto 5rem;
@@ -350,14 +408,9 @@ picture{
 
 /*images*/
     #SideBySide{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
         margin: 0 10rem;
+        text-align: center;
     }
-        #SideBySide p{
-            grid-row: 2/3;
-        }
         #SideBySide picture{
             margin: 0 auto;
         }
@@ -428,7 +481,7 @@ picture{
             }
 
         #contactInfo{
-            margin: auto 12rem;
+            margin: auto 12rem 2rem;
         }
         
     /*text*/
@@ -458,7 +511,13 @@ picture{
             .jobDets, .EduDets{
                 margin: auto .75rem auto;
             }
-
+    /*img*/
+        #SideBySide{
+            display: grid;
+        }
+            #SideBySide p{
+                grid-row: 2/3;
+            }
     }
 
 @media screen and (min-width: 1300px) {
@@ -472,6 +531,6 @@ picture{
     }
 
     #contactInfo{
-        margin: auto 15rem;
+        margin: auto 15rem 2rem;
     }
 }
