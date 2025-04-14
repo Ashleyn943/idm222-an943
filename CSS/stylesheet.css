@@ -459,7 +459,7 @@ picture{
     /*Divs + other boxes*/
         #NextBackColor{
             background-color: var(--pink-400);
-            margin: 1rem auto auto;
+            margin: 2rem auto auto;
         }
             #NextBack{
                 width: 80vw
